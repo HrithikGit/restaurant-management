@@ -23,13 +23,16 @@ function Sidebar() {
         <ul className="SidebarList">
         <li className="SidebarTitle">
                 <div id="icon"><AccountIcon/></div>
-                <div id="title">User Name</div>
+                <div id="title">
+                <p className="color--primary" >Full</p>
+                <p className="color--black" style={{marginLeft: "5px"}}>Name</p>
+                </div>
         </li>
          {SidebarData.map((val,key)=>{
             return (
                 <>
-                    <Link className="row" to={val.link} onClick={(e) => handleClick(e,val.subData)}>
-                    <div id="icon">{val.icon}</div>
+                    <Link className="row subtext" to={val.link} onClick={(e) => handleClick(e,val.subData)}>
+                    <div className="imageicon" id="icon">{val.icon}</div>
                     <div id="title">{val.title}</div>
                     <div id="arrow">
                         {val.subData && subData
@@ -42,7 +45,7 @@ function Sidebar() {
                        {subData && val.subData && (
                           <ul> 
                             {val.subData.map((data,keys)=> (
-                                <Link className="row" to={data.link}>
+                                <Link className="row subtext" to={data.link}>
                                 <div id="subTitle">{data.title}</div>
                                 </Link>
                                ))}                         
