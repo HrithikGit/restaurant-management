@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
-import Sidebar from './components/Sidebar'
+import Sidebar from './components/Sidebar';
+import Dashboard from './components/Dashboard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Sidebar/>
+    <Dashboard/>
   </React.StrictMode>
 );
 
