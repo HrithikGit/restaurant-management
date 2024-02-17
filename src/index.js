@@ -2,15 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-
-import Sidebar from './components/Sidebar';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import App from './App';
 import Dashboard from './components/Dashboard';
 
+const router = createBrowserRouter([
+  {
+    path:'/',
+    element: <App />
+  },
+  {
+    path:'/dashboard',
+    element: <Dashboard />
+  }
+])
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Sidebar/>
-    <Dashboard/>
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 

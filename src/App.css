@@ -1,0 +1,139 @@
+.App{
+    height: 100vh;
+    width: 100vw;
+}
+
+.Sidebar{
+    height: 100%;
+    width: 180px;
+    border-style: outset;
+}
+
+.SidebarTitle {
+    height: 50px;
+    width : 100%;
+    list-style-type: none;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.SidebarTitle #icon{
+    flex: 30%;
+    display: grid;
+    place-items: center;
+}
+
+.SidebarTitle #title{
+    flex: 70%;
+}
+
+.SidebarList {
+    height: auto;
+    width: 100%;
+    padding:0;
+}
+
+.SidebarList .row {
+    width: 100%;
+    height: 50px;
+    list-style-type: none;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.SidebarList .row:hover {
+  cursor: pointer;
+  background-color: gray;
+  border-radius: 25px; 
+}
+
+.SidebarList .row:hover #icon{
+    background-color: blue;
+    border-radius: 50%;
+    
+  }
+
+.row #icon{
+    flex: 30%;
+    height: 90%;
+    width: 90%;
+    display: grid;
+    place-items: center;
+}
+
+.row #subTitle{
+   flex: 100%;
+}
+
+.row #title{
+    flex: 50%;
+}
+.row #arrow{
+    flex: 20%;
+}
+
+.color--primary {
+    color : #ff7d00;
+}
+.color--secondary {
+    color : #572f89;
+}
+.color--white{
+    color : #ffffff;
+}
+.color--pink{
+    color : #ff92c2;
+}
+.color--gray {
+    color : #817f82;
+}
+.color--black {
+    color : black;
+}
+
+.d-flex{
+    display : flex;
+}
+.jc-around {
+    justify-content: space-around;
+}
+.jc-between{
+    justify-content: space-between;
+}
+.ai-center {
+    align-items: center;
+}
+
+.h-line {
+    border-top: 1px solid #dedede; /* Change the color to your desired color */
+    width: 100%; /* Adjust the width as needed */
+}
+
+.page-background {
+    background-color: #fafafa;
+    min-height: 100vh;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.subtext{
+    color : #817f82;
+    font-size: 12px;
+}
+
+.imageicon {
+    width : 40px;
+    height : 40px;
+    border-radius: 50%;
+    margin : 0px 12px;
+}
