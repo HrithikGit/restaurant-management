@@ -140,3 +140,29 @@
     border-radius: 50%;
     margin : 0px 4px;
 }
+
+/* Orders CSS */
+
+.ordersMain{
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+}
+
+.ordersTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.ordersTitleFirst {
+    flex: 70%;
+}
+
+.ordersTitleSecond {
+    flex: 30%;
+}
+
+.datePicker {
+    border-radius: 50%;
+}
