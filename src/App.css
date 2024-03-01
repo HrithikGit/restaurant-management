@@ -114,6 +114,9 @@
 .ai-center {
     align-items: center;
 }
+.flex-wrap {
+    flex-wrap: wrap;
+}
 
 .h-line {
     border-top: 1px solid #dedede; /* Change the color to your desired color */
@@ -123,7 +126,8 @@
 .page-background {
     background-color: #fafafa;
     min-height: 100vh;
-    min-width: 100%;
+    width: 100%;
+    padding : 40px;
 }
 
 .w-100{
@@ -133,6 +137,10 @@
 .subtext{
     color : #817f82;
     font-size: 12px;
+}
+
+.text-center{
+    text-align: center;
 }
 
 .imageicon {
@@ -166,4 +174,8 @@
 
 .datePicker {
     border-radius: 50%;
+}
+
+li{
+    margin-bottom: 12px;
 }
