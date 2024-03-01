@@ -8,10 +8,10 @@ import  Dashboard  from './components/Dashboard';
 function App(){
     return (
         <div className="App">
-            <div>
+            <div style={{ width : "12%"}}>
                 <Sidebar/>
             </div>
-            <div>
+            <div style={{ width : "88%"}}>
                 <Routes>
                     <Route path="/" element={<Dashboard />}></Route>
                 </Routes>

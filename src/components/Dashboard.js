@@ -35,7 +35,7 @@ function Dashboard(){
 
     return (
         <div className="page-background">
-            <Container sx={{paddingY : "32px", display : "flex", justifyContent : "space-around", width : "100%"}}>
+            <div style={{paddingTop : "32px", paddingBottom : "32px", display : "flex", justifyContent : "space-around", width : "100%"}}>
                 <Paper sx={ statStyle} > 
                     <div style={{ display : "flex", alignItems : "center", justifyContent: "space-around"}}>
                         <ArrowOutwardIcon sx={{ marginRight : "12px", color : "white", backgroundColor : "#572F89", borderRadius : "8px", padding : "8px"}} /> 
@@ -75,7 +75,7 @@ function Dashboard(){
                         </div>  
                     </div>
                 </Paper>
-            </Container>
+            </div>
 
             {/* second section */}
 

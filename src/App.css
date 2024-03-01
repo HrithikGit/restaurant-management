@@ -123,6 +123,7 @@
 .page-background {
     background-color: #fafafa;
     min-height: 100vh;
+    min-width: 100%;
 }
 
 .w-100{

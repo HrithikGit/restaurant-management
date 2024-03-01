@@ -33,7 +33,7 @@ function Sidebar() {
                 <>
                     <Link className="row subtext" to={val.link} onClick={(e) => handleClick(e,val.subData)}>
                     <div className="imageicon" id="icon">{val.icon}</div>
-                    <div id="title">{val.title}</div>
+                    <p id="title">{val.title}</p>
                     <div id="arrow">
                         {val.subData && subData
                          ? <ArrowUpIcon/>
@@ -46,7 +46,7 @@ function Sidebar() {
                           <ul> 
                             {val.subData.map((data,keys)=> (
                                 <Link className="row subtext" to={data.link}>
-                                <div id="subTitle">{data.title}</div>
+                                <p id="subTitle">{data.title}</p>
                                 </Link>
                                ))}                         
                     </ul>            
